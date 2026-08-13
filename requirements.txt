@@ -1,0 +1,23 @@
+# GUI
+PySide6>=6.6.0
+
+# OCR - RapidOCR v3（PP-OCRv6 模型打包在 wheel 内，pip 安装即用，无需联网下载）
+rapidocr>=3.9.0
+onnxruntime>=1.16.0
+
+# 翻译 - Qwen2.5-1.5B + OpenVINO NPU 加速
+optimum-intel>=1.16.0
+openvino>=2024.2.0
+transformers>=4.40.0
+torch>=2.2.0  # 仅用于 tokenizer/权重加载，推理走 OpenVINO（2.2+ 才支持 Python 3.12）
+accelerate>=0.27.0
+
+# 截图
+mss>=9.0.1
+Pillow>=10.0.0
+
+# 全局快捷键后台监听（应用失焦也能响应）
+pynput>=1.7.6
+
+# 工具
+numpy>=1.24.0
